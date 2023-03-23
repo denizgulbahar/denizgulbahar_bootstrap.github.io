@@ -1,0 +1,183 @@
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-align:center;
+}
+
+h1,h2,h3 {
+    font-family: 'Montserrat';               /* Ortak olanları burada topla diğerlerinden çıkar! */
+    font-weight: 900;   
+}
+
+p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color:#8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {    
+    font-size: 3.5rem;     
+    line-height: 1.5; 
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Sections */
+
+.colored-section {
+    background-color:#ff4c68;
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+/* Containers */
+
+.container-fluid {                            /* Diğer benzer paddingleri silip hepsini konteynırların içine yerleştirdik. */
+    padding: 7% 15%;
+}
+
+#title .container-fluid {                     /* Bununla sadece title idli container-fluidin paddinginin değişmesini sağlayabiliyoruz. */
+    text-align: left;
+    padding: 3% 7% 10%;
+    }
+
+#footer .container-fluid {                     /* Bununla sadece title idli container-fluidin paddinginin değişmesini sağlayabiliyoruz. */
+        padding: 3% 7% 5%;
+        }
+
+/* Navigation Bar Section */
+
+.navbar-brand {
+    font-family: 'Montserrat';    
+    font-weight: 900;    
+    font-size: 2rem;     
+}
+.navbar {
+    padding: 0 8rem 4.5rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+
+/* Title Section */
+
+.title-image {
+    max-width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+}
+
+/* Features Section */
+
+#features {
+    background-color:#fff;
+    position: relative;
+}
+
+.features-title {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.feature-box {
+    padding:4.5%;
+}
+
+.fa-solid {
+    color:#ef8178;
+}
+.fa-solid:hover {
+    color:#ff4c68;
+}
+
+/* Testimonial Section */
+
+#testimonials {       
+    background-color:#ef8178;                   /* Buradaki paddingi carousel'in geçiş oklarını dışarı almak için kaldırdık.*/
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+width: 10%;
+border-radius: 100%;
+margin: 20px;                               /* Burada padding değil margin çünkü padding resmin boyutunu küçültüyor.  */
+}
+
+
+/* Press section */
+
+#press {
+    padding:3%;
+    background-color:#ef8178; 
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+    padding:100px;
+}
+
+.pricing-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.card-header {
+    font-size: 1.5rem;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+@media (max-width:1040px) {                       /* Bu sorgulardaki ortak nesneleri refactor yaparken silmemeye dikkat ediyoruz! */
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        transform: rotate(0);
+        position: static;
+    }
+}
+
+/* Call to Action Section */
+
+/* Footer Section */
+
+.footer-link {
+    font-size: 2.5rem;
+}
+
+
